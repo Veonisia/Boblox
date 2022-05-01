@@ -3,7 +3,7 @@ local place = game.PlaceId
 if place == 8097148487 then
 wait(10)
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/pattingbabies/blora/main/mchampions'),true))()
-end
+       wait(5)
 -- AAAAAAAAAA
 repeat wait() until game.ContentProvider.RequestQueueSize == 0
 local guiMinutes = workspace.Bosses:FindFirstChild("Ice Golem").UI.SurfaceGui.Time.Text 
@@ -371,3 +371,4 @@ peanut = peanut + 1
 end --Serverhop function here
 end
 
+end
