@@ -13,7 +13,7 @@ local RemainingTime = tonumber(Mins) * 60 + tonumber(Seconds)
 if RemainingTime > 180 then
 function _G.SendWebHook(url, message)newBody = {["content"] = tostring(message)}; SynWebHook = {Url = url,Body = game.HttpService:JSONEncode(newBody),Method = "POST",Headers = {["content-type"] = "application/json"}};syn.request(SynWebHook)end;
 
-_G.SendWebHook("https://discord.com/api/webhooks/970065389906194514/W6yOtXO5Kj4m2pVHGWUYLADwLDp8kkj1yOLYSHY0DNyEs_rwhGh0NhCqMv9yenL32zt1", "\n:x: Server has over 3 minutes. :mag_right:** Looking for another one..**")
+_G.SendWebHook("https://discord.com/api/webhooks/970065389906194514/W6yOtXO5Kj4m2pVHGWUYLADwLDp8kkj1yOLYSHY0DNyEs_rwhGh0NhCqMv9yenL32zt1", ":x: Server has over 3 minutes. :mag_right:** Looking for another one..**")
 local vim = game:service'VirtualInputManager'
 local peanut = 0
 while wait(0) do
