@@ -1,5 +1,13 @@
+
+
+
+
+
 -- Boss
+_G.KeepChecking = true
+
 local bossstatus = workspace.Bosses:FindFirstChild("Ice Golem").UI.SurfaceGui.Status.Text
+while _G.KeepChecking do
 function boss()
     if bossstatus == "STATUS: PREPARING" then
         local args = {[1] = "Boss",[2] = "Ice Golem"}
@@ -18,6 +26,10 @@ end
 end
     attack()
 end
+task.wait()
+end
+
+
 
 -- Attack Function
 function attack()
